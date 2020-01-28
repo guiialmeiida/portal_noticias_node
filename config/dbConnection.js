@@ -1,12 +1,12 @@
 var mysql = require('mysql');
 
 var connMysql = function(){
-    console.log('Conexao com BD foi estabelecida');
-    return mysql.createConnection({
-        host : 'localhost',
-        user : 'root',
-        password : '1234',
-        database : 'portal_noticias'
+    console.log('Conexao com o BD foi estabelecida')
+    return connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: '1234',
+        database: 'portal_noticias'
     });
 }
 
